@@ -20,7 +20,7 @@ import Favorites from "./components/Favorites";
 
 function App() {
   return (
-    <Router basename="/pitches-app">
+    <Router basename="/">
       <Routes>
         {/* Public */}
         <Route path="/login" element={<Login />} />

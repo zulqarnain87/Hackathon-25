@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // 🔑 Replace with your own Gemini API key
-const genAI = new GoogleGenerativeAI("AIzaSyD-tqcYYgXv-txwB79QPMzm1hH1qJ13jgY");
+const genAI = new GoogleGenerativeAI("AIzaSyAaThT8YUlsM_Zz23xKQ4CIkNivp6EMkvc");
 
 export default function AiChat() {
   const [messages, setMessages] = useState([
@@ -22,7 +22,7 @@ export default function AiChat() {
     setLoading(true);
 
     try {
-      const model = genAI.getGenerativeModel({ model: "models/gemini-2.0-flash" });
+      const model = genAI.getGenerativeModel({ model: "models/gemini-2.5-flash" });
       const result = await model.generateContent(input);
       const reply = result.response.text();
 

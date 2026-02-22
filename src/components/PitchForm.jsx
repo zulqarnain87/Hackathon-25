@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 import Editor from "@monaco-editor/react";
 
 // 🔑 Initialize Gemini SDK
-const genAI = new GoogleGenerativeAI("AIzaSyAaThT8YUlsM_Zz23xKQ4CIkNivp6EMkvc");
+// const genAI = new GoogleGenerativeAI("AIzaSyAaThT8YUlsM_Zz23xKQ4CIkNivp6EMkvc");
 
 export default function PitchGenerator() {
   const { user, loading: authLoading } = useAuth();
